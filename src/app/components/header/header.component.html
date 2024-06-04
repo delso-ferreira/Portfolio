@@ -1,0 +1,23 @@
+<header class="text-gray-400 bg-gray-900 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">        
+        <span class="ml-3 text-xl">Hello, fellow human</span>
+      </a>
+      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+        <a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true}" ariaCurrentWhenActive="page" class="mr-5 hover:text-white">Home</a>
+        <a routerLink="/projects" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true}" ariaCurrentWhenActive="page" class="mr-5 hover:text-white">Projects</a>
+        <a routerLink="/contact" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true}" ariaCurrentWhenActive="page" class="mr-5 hover:text-white">Contact</a>        
+      </nav>
+      <div class="flex items-center space-x-3">
+        <a href="https://github.com/delso-ferreira" target="_blank" rel="noopener noreferrer">
+          <mat-icon svgIcon="second_icon" class="mx-2 mt-2 md:mt-0"></mat-icon>
+        </a>
+        <a href="https://www.linkedin.com/in/delsoferreira/" target="_blank" rel="noopener noreferrer">
+          <mat-icon svgIcon="first_icon" class="mx-2 mt-2 md:mt-0"></mat-icon>        
+        </a>
+        <a routerLink="/contact">
+          <mat-icon class="mx-2 mt-2 md:mt-0">mail</mat-icon>
+        </a>
+      </div>
+          </div>
+  </header>
