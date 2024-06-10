@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common'; // Importe o CommonModule
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2'
+import { SpinnerComponent } from '../spinner/spinner.component';
 
 class EmailService {
   async sendEmail(data: any) {
@@ -16,7 +17,7 @@ class EmailService {
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss'],
   providers: [EmailService], 
-  imports: [CommonModule, ReactiveFormsModule] // Use o CommonModule aqui
+  imports: [CommonModule, ReactiveFormsModule, SpinnerComponent] 
 })
 export class ContactComponent { 
   

@@ -33,7 +33,9 @@
         <div class="p-2 w-full">
           <button type="submit" class="flex mx-auto text-white bg-green-600 border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded text-lg" [disabled]="loading">
             <span type="submit" *ngIf="!isLoading()">Send</span>
-            <span type="submit" *ngIf="isLoading()">Loading...</span>
+            <span type="submit" *ngIf="isLoading()">
+              <app-spinner> </app-spinner>
+            </span>
           </button>
         </div>
         <div class="p-2 w-full pt-2 border-t border-gray-200 text-center">
